@@ -1,0 +1,38 @@
+#############################################################################
+# Config for AcidRain V${version}
+##############################################################################
+
+# General settings
+general:
+   # Name of the worlds where acid rain falls
+   worldNames:
+   - world
+   #- ASkyBlock
+   #- Beaconz
+   
+   # Ops receive damage from acid
+   damageops: true
+
+   # Acid damage to player per second by being in acid if they have no armor on.
+   # A full-health player has 20 health points. Players will regen some health
+   # so the default will give players about 3 seconds to get out the acid
+   # 0 = no damage, 10 = default damage, 20 = instant death
+   aciddamage: 10
+   # Damage that monsters will experience.
+   mobaciddamage: 10
+   # Damage that rain does. Acid rain. That's the name of this plugin and where the
+   # acid water comes from. If you think this should be zero, delete this plugin and
+   # go install a pet plugin or something.
+   raindamage: 1
+   # Damage that animals will experience in acid.
+   animaldamage: 2
+   # Damage chickens in acid - true or false - chickens tend to go swimming...
+   damagechickens: false
+
+   # Damage type to apply in addition to acid damage
+   # Types can be : SLOW, SLOW_DIGGING, CONFUSION, BLINDNESS, HUNGER, WEAKNESS and POISON
+   # If you just want these to act, then make the acid damage 0 above
+   # Note - these are potion effects and so can be cured by milk
+   damagetype:
+   - confusion
+   - slow

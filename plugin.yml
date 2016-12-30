@@ -1,0 +1,6 @@
+name: AcidRain
+main: com.wasteofplastic.acidrain.AcidRain
+version: ${version}
+description: AcidRain
+author: tastybento
+depend: [Vault]
