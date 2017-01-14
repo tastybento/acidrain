@@ -94,6 +94,7 @@ public class AcidEffect implements Listener {
 
         // Run a recurring task to hurt players when rain is falling
         new BukkitRunnable() {
+            @SuppressWarnings("deprecation")
             @Override
             public void run() {
                 // Check if it is still raining 
@@ -194,6 +195,8 @@ public class AcidEffect implements Listener {
             double health = player.getHealth() - (Settings.acidDamage - Settings.acidDamage * getDamageReduced(player));
             if (health < 0D) {
                 health = 0D;
+            } else if (health > player.getMaxHealth()) {
+                health = player.getMaxHealth();
             }
             player.setHealth(health);
             if (plugin.getServer().getVersion().contains("(MC: 1.8") || plugin.getServer().getVersion().contains("(MC: 1.7")) {

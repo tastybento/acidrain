@@ -63,5 +63,5 @@
             <url>http://nexus.hc.to/content/repositories/pub_releases</url>
         </repository>
     </repositories>
-    <version>1.4.0.1</version>
+    <version>1.4.0.2</version>
 </project>
